@@ -33,11 +33,12 @@ app.post("/", function(req, res){
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us6.api.mailchimp.com/3.0/lists/2f4bbb77f1";
+  const url = "https://us6.api.mailchimp.com/3.0/lists/" + listId;
+  const listId = "";
 
   const options  = {
     method: "POST",
-    auth: "steven1:9847720cabd97b4308677b6b62c021b9-us6"
+    auth: ""
   }
 
   const request = https.request(url, options, function(response) {
@@ -68,9 +69,3 @@ app.post("/failure", function(req, res){
 app.listen(port, function() {
   console.log("Server is running on port " + port);
 });
-
-// Audience ID
-  // 2f4bbb77f1
-
-// API Key
-  // 9847720cabd97b4308677b6b62c021b9-us6
