@@ -1,0 +1,91 @@
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+
+  .fail-or-succ {
+    background-image:url("/image/bg.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+
+  .fail-or-succ:before {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    right:0;
+    content:'';
+    background:rgba(0,0,0,.45);
+    z-index:-1;
+  }
+
+  .fail-or-succ .container-fluid {
+    animation-duration: .3s;
+    animation-timing-function:cubic-bezier(0,.84,.97,.66);
+    animation-name: intro-bounce;
+    position:relative;
+    top:0;
+    left:0;
+  }
+
+  @keyframes intro-bounce {
+    0% { transform: scale(1); }
+    33% { transform: scale(1.05,0.95); }
+    100% { transform: scale(1); }
+  }
+
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .form-signin .checkbox {
+  font-weight: 400;
+  }
+
+  .form-signin input:focus {
+    z-index: 2;
+  }
+
+  .form-signin input {
+    border-radius:0;
+    margin-bottom:-1px;
+  }
+
+  .form-signin .top-input {
+    margin-bottom: -1px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  .form-signin .bottom-input {
+    margin-bottom:2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
