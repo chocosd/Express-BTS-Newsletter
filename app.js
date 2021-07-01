@@ -3,6 +3,9 @@ const express = require("express");
 const request = require("request");
 const https = require("https");
 
+require('dotenv').config();
+console.log(process.env);
+
 const app = express();
 const port = 3000;
 app.use(express.json());
@@ -33,8 +36,9 @@ app.post("/", function(req, res){
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us6.api.mailchimp.com/3.0/lists/" + listId;
-  const listId = "";
+  const listId = process.env.LIST_ID;
+  const apiKey = process.env.API_KEY;
+  const url = `https://us6.api.mailchimp.com/3.0/lists/${listId}`;
 
   const options  = {
     method: "POST",

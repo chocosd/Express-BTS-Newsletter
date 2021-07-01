@@ -1,34 +1,59 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Newsletter signup</title>
-    <!-- Bootstrap core CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Newsletter signup</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Roboto and SpaceMono Typeface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <!-- FA Icons -->
+  <script defer="" src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
-    <!-- Favicons -->
+  <meta name="theme-color" content="#7952b3">
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-<meta name="theme-color" content="#7952b3">
-    <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
+<body class="text-center container-fluid row m-0 p-0 flex-column justify-content-center align-items-center">
+  <div class="banner--content text-center pt-160 pb-100 col-12">
 
-<main class="form-signin">
-  <form action="/" method="POST">
-    <img class="mb-4" src="image/lablogo.svg" alt="" width="144" height="144">
-    <h1 class="h3 mb-3 fw-normal">Sign up to my newsletter</h1>
-    <input type="text" name="fName" class="form-control top-input" placeholder="First Name" required autofocus>
-    <input type="text" name="lName" class="form-control middle-input" placeholder="Last Name" required>
-    <input type="email" name="email" class="form-control bottom-input" placeholder="name@example.com" required>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign me up!</button>
-    <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
-  </form>
-</main>
+    <div class="animate-title--wrapper">
+      <div class="title text-uppercase">
+        <h2 class="h3 text-white">
+          <span class="text-primary">Hello</span>
+          I'm
+        </h2>
+      </div>
 
+      <div class="name text-uppercase">
+        <h3 class="h2 text-white fw--500">Steven Dix</h3>
+      </div>
+    </div>
+
+    <div class="role fs--18 fw--700 text-white">
+      <p>Professional Web and Graphic Designer</p>
+    </div>
+  </div>
+<div class="container-md newsfeed-box col-4 d-flex row-cols-2 flex-row justify-content-between align-items-center bg-light rounded-3 bg-gradient">
+  <div class="col">
+    <h2 class="display-6">Sign up for the newsletter!</h2>
+  </div>
+  <!-- <main class="form-signin m-0 col"> -->
+    <form action="/" method="POST" class="col-6 p-15 bg-white rounded-3" _lpchecked="1">
+      <input type="text" name="fName" class="form-control top-input mb-4" placeholder="First Name" required="" autofocus="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+      <input type="text" name="lName" class="form-control middle-input mb-4" placeholder="Last Name" required="">
+      <input type="email" name="email" class="form-control bottom-input mb-4" placeholder="name@example.com" required="">
+      <button class="w-100 btn btn-lg cust-primary text-white" type="submit">Sign me up!</button>
+      <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+    </form>
+  <!-- </main> -->
+</div>
 
 
 
