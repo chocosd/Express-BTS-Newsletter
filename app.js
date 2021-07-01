@@ -70,6 +70,6 @@ app.post("/failure", function(req, res){
   res.redirect("/")
 })
 
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
   console.log("Server is running on port " + port);
 });
